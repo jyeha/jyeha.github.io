@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>박박박</title>
+    <link type="text/css" rel="stylesheet" href="pageStyle.css">
+    <script src="scrollFunction.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+
+</head>
+
+
+<body>
+    <div id="navigator">
+        <ul>
+            <li><button id="goto1" class="btn" onclick="navScroll('1')">TITLE</a></button>
+            <li><button id="goto2" class="btn" onclick="navScroll('2')">INTRO</a></button>
+            <li><button id="goto3" class="btn" onclick="navScroll('3')">PROJECT</a></button>
+            <li><button id="goto4" class="btn" onclick="navScroll('4')">HOBBY</button></li>
+        </ul>
+    </div>
+
+    <div id="main"\>
+
+        <section id="page1" class="section">
+            <div id="t">
+                <p id="tit" sytle="font-family: Masque;"></p>
+            </div>
+        </section>
+
+        <section id="page2" class="section">
+            <div id="wrapper2">
+                <div id="wrap2" class="inner2">
+                    <div id="Introduction">
+                        <img src="Aboutme.png">
+                    </div>
+                    <div id="buttonWrap">
+                        <button id="btn1" type="button" class="page2BTN" onclick="IntroChange('1')"></button>
+                        <button id="btn2" type="button" class="page2BTN" onclick="IntroChange('2')"></button>
+                        <button id="btn3" type="button" class="page2BTN" onclick="IntroChange('3')"></button>
+                        <button id="btn4" type="button" class="page2BTN" onclick="IntroChange('4')"></button>
+                    </div>
+                </div>
+                <div id="image" class="inner2">
+                    <img src="intro.png" id="intro_img1" class="intro_img">
+                    <img src="timetable.png" id="intro_img2" class="intro_img" sytle="opacity:0.7">
+                    <img src="done.png" id="intro_img3" class="intro_img">
+                    <img src="hope.png" id="intro_img4" class="intro_img">
+                </div>
+            </div>
+        </section>
+
+        <section id="page3" class="section">
+            <div id="wrapper3">
+                <div id="left">
+                    <div id="Project">
+                        <img src="project.png">
+                    </div>
+                    <div id="explain">
+                        <img src="explain1.png" id="explain1">
+                        <img src="explain2.png" id="explain2">
+                        <img src="explain3.png" id="explain3">
+                    </div>
+                </div>
+                <div id="project_image">
+                    <img src="project1.png" id="project_img1" class="project_img">
+                    <img src="project2.png" id="project_img2" class="project_img">
+                    <img src="project3.png" id="project_img3" class="project_img">
+                </div>
+            </div>
+            <div id="buttons3">
+                <button id="btn3_1" type="button" class="btn" onclick="ProjectChange('1')"></button>
+                <button id="btn3_2" type="button" class="btn" onclick="ProjectChange('2')"></button>
+                <button id="btn3_3" type="button" class="btn" onclick="ProjectChange('3')"></button>
+            </div>
+        </section>
+
+        <section id="page4" class="section">
+            <div id="wrapper4">
+                <div id="title">
+                    <div id="Hobby">
+                        <img src="hobby.png">
+                    </div>
+                </div>
+                <div id="hobby_wrapper">
+                    <div id="illust">
+                        <a id="button_detail1" class="button_detail1" href="#popDetail_1"><img src="plus_button.png"></a>
+                    </div>
+                    <div id="retexture">
+                        <a id="button_detail2" class="button_detail2" href="#popDetail_2"><img src="plus_button.png"></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <div class="layerPop" id="popDetail_1" style="display:none">
+        <div id="popupWrapper1">
+            <img src="popup1.png" id="Detail_1" class="popup1 detail">
+            <div id="Close" class="popup1 close">
+                <button id="close_img1" type="button"><img src="close.png"></button>
+            </div>
+        </div>
+    </div>
+    <div class="layerPop" id="popDetail_2" style="display:none">
+        <div id="popupWrapper2">
+            <img src="popup2.png" id="Detail_2" class="popup2 detail">
+            <div id="Close" class="popup2 close">
+                <button id="close_img2" type="button"><img src="close.png"></button>
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+</html>
